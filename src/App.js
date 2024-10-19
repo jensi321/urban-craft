@@ -13,6 +13,7 @@ import Register from './Components/Register'
 import ManagePaymentsPage from './Components/Pages/ManagePaymentsPage'
 import ManageAddressPage from './Components/Pages/ManageAddressPage'
 import SupportPage from './Components/Pages/SupportPage'
+import Errorpage from './Components/Pages/Errorpage'
 
 const App = () => {
 
@@ -34,6 +35,7 @@ const App = () => {
         <Route path='/payments' element={<ManagePaymentsPage/>}/>
         <Route path='/address' element={<ManageAddressPage/>}/>
         <Route path='/support' element={<SupportPage/>}/>
+        <Route path='*' element={<Errorpage/>} />
 
 
       </Routes>
