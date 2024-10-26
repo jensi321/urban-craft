@@ -60,7 +60,7 @@ const RegisterForm = () => {
 
                     {/* Signup Button */}
                     <div className="flex flex-col items-center gap-3">
-                        <Link to={'/'} className='rounded-[24px] px-[34px] w-full self-stretch font-semibold sm:px-5 flex flex-row items-center justify-center text-center cursor-pointer whitespace-nowrap h-[48px] px-[34px] text-[14px] bg-lime-900 '><p className='text-orange-50'>Register</p></Link>
+                        <Link to={'/'} className='button rounded-[24px] px-[34px] w-[280px] m-auto self-stretch font-semibold sm:px-5 flex flex-row items-center justify-center text-center cursor-pointer whitespace-nowrap h-[48px] px-[34px] text-[14px] bg-lime-900 text-orange-50'><p className=''>Register</p></Link>
                         <p className=' text-[14px] font-normal text-gray-600_01'>
                             <span className="text-gray-600_01">By clicking Register you agree to our </span>
                             <span className="font-medium text-lime-900">Terms of use</span>

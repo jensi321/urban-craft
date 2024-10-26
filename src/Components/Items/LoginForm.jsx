@@ -51,7 +51,7 @@ const LoginForm = () => {
                     </div>
 
                     {/* Signup Button */}
-                    <Link to={'/'} className='rounded-[24px] px-[34px] w-full self-stretch font-semibold sm:px-5 flex flex-row items-center justify-center text-center cursor-pointer whitespace-nowrap h-[48px] px-[34px] text-[14px] bg-lime-900 '><p className='text-orange-50'>Login</p></Link>
+                    <Link to={'/'} className='button rounded-[24px] px-[34px] w-[280px] m-auto self-stretch font-semibold sm:px-5 flex flex-row items-center justify-center text-center cursor-pointer whitespace-nowrap h-[48px] px-[34px] text-[14px] bg-lime-900 text-orange-50'><p className=''>Login</p></Link>
 
                     {/* Or */}
                     <div className='flex items-center justify-center gap-8 '>

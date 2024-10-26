@@ -159,10 +159,10 @@ const BlogDetails = () => {
                                 <div className="flex flex-col gap-4">
 
                                     <div className="flex flex-wrap sm:gap-2 gap-4 ">
-                                        <input name='name'  type="text" className='sm:w-[49%] border border-lime-900 rounded-[10px] p-[10px] ' placeholder='Your Name*' />
-                                        <input name='email'  type="text" className='sm:w-[49%] border border-lime-900 rounded-[10px] p-[10px] ' placeholder='Your Email*' />
+                                        <input name='name' autoComplete='on' type="text" className='sm:w-[49%] border border-lime-900 rounded-[10px] p-[10px] ' placeholder='Your Name*' />
+                                        <input name='email' autoComplete='email' type="text" className='sm:w-[49%] border border-lime-900 rounded-[10px] p-[10px] ' placeholder='Your Email*' />
                                     </div>
-                                    <textarea name="" placeholder='Your Comments*' className='w-full h-[120px] border border-lime-900 rounded-[10px] p-[10px] ' ></textarea>
+                                    <textarea name="comments" autoComplete='off' placeholder='Your Comments*' className='w-full h-[120px] border border-lime-900 rounded-[10px] p-[10px] ' ></textarea>
 
                                     <button className='button rounded-[10px]  sm:px-[34px] font-semibold px-5 flex flex-row items-center justify-center text-center cursor-pointer whitespace-nowrap  h-[48px] px-[34px] w-[200px] text-[14px] bg-lime-900 text-white'><span className='flex items-center gap-2'>Post Comment <span><FaPaperPlane /></span></span> </button>
                                 </div>

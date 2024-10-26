@@ -8,6 +8,7 @@ import PopularSofa from '../Home/PopularSofa'
 import NewsLetter from '../Home/NewsLetter'
 import Team from '../HomeTwo/Team'
 import Offer from '../HomeTwo/Offer'
+import Blog from '../HomeTwo/Blog'
 
 const HometwoPage = () => {
   return (
@@ -19,6 +20,7 @@ const HometwoPage = () => {
       <About />
       <PopularSofa />
       <Offer/>
+      <Blog/>
       <Team />
       <Footer />
     </>
