@@ -4,7 +4,7 @@ import Footer from '../Footer'
 import PageBanner from '../PageBanner'
 import Contact from '../Contact/Contact'
 import Testimonial from '../Contact/Testimonial'
-import Map from '../Contact/Map'
+import OurTeam from '../About/OurTeam'
 
 const ContactPage = () => {
   const Breadcrumb = [
@@ -21,8 +21,8 @@ const ContactPage = () => {
       <Header />
       <PageBanner value={Breadcrumb} />
       <Contact />
+      <OurTeam />
       <Testimonial />
-      <Map />
       <Footer />
     </>
   )

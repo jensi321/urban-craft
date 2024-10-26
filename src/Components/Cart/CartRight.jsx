@@ -12,7 +12,7 @@ const CartRight = ({ handleNext }) => {
 
     return (
         <>
-            <div className="rounded-[16px] py-[18px] gap-[30px] lg:w-[32%] flex flex-col self-center border border-solid border-gray-200_01 px-4 w-full" data-aos="fade-up" data-aos-duration="1000">
+            <div className="rounded-[16px] py-[18px] gap-[30px] lg:w-[32%] flex flex-col  self-center border border-solid border-gray-200_01 px-4 w-full" data-aos="fade-up" data-aos-duration="1000">
                 <div className="flex flex-col items-start gap-3" data-aos="zoom-in" data-aos-duration="1500">
                     <p className="text-[14px] font-normal uppercase text-gray-600_01">Delivery option</p>
                     <div className="flex flex-col gap-3 self-stretch">
@@ -53,7 +53,7 @@ const CartRight = ({ handleNext }) => {
                     <label className="rounded-[ 24px] gap-1 self-stretch flex items-center justify-center cursor-text bg-gray-200_03 text-gray-500 h-[48px] pl-4 pr-[34px] text-[14px]">
                         <img src="assets/Images/discount.svg" className='w-[24px] h-[24px]' alt="" />
                         <input type="text" name="coupon-code" autoComplete="coupon-code" className='bg-transparent' placeholder="Apply coupon code" />
-                        <button>
+                        <button className=''>
                             <p className="text-[14px] w-[38px] mb-0.5 mt-1 font-medium text-colors">Apply</p>
                         </button>
                     </label>
@@ -81,7 +81,7 @@ const CartRight = ({ handleNext }) => {
                         </div>
                     </div>
                 </div>
-                <button className='rounded-[24px] px-[34px] self-stretch font-semibold sm:px-5 flex flex-row items-center justify-center text-center cursor-pointer whitespace-nowrap h-[48px] px-[34px] text-[14px] bg-lime-900 text-orange-50' onClick={handleNext} data-aos="zoom-in">Next</button>
+                <button className='button rounded-[24px] px-[34px] mx-auto w-[260px] self-stretch font-semibold sm:px-5 flex flex-row items-center justify-center text-center cursor-pointer whitespace-nowrap h-[48px] px-[34px] text-[14px] bg-lime-900 text-orange-50' onClick={handleNext} data-aos="zoom-in">Next</button>
             </div>
         </>
     );

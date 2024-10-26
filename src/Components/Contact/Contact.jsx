@@ -106,7 +106,7 @@ const Contact = () => {
                                             <textarea className="border border-lime-900 rounded-[10px] py-[10px] px-[20px] w-full h-[90px] resize-none" name='message' autoComplete='off'  placeholder="Write Your Mssage" required="" />
                                         </div>
                                     </div>
-                                    <button type='button' data-aos="fade-up" data-aos-duration="1000" className='flex items-center relative text-[16px] bg-lime-900 py-[10px] px-[20px] capitalize font-[500] rounded-[10px] text-white' >Send Message <span className='ml-[5px]'><FaRegPaperPlane />                                        </span></button>
+                                    <button type='button' data-aos="fade-up" data-aos-duration="1000" className='button border border-lime-900 flex items-center relative text-[16px] bg-lime-900 py-[10px] px-[20px] capitalize font-[500] rounded-[10px] text-white' >Send Message <span className='ml-[5px]'><FaRegPaperPlane />                                        </span></button>
                                 </form>
                             </div>
                         </div>

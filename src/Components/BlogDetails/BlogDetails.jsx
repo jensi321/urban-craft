@@ -152,7 +152,7 @@ const BlogDetails = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="mt-[50px] p-[30px] bg-gray-200_01 rounded-[10px]" data-aos="fade-up" data-aos-duration="1000">
+                        <div className="mt-[50px] p-[30px] border-2 boxShadow border-lime-900 rounded-[10px]" data-aos="fade-up" data-aos-duration="1000">
                             <h3 className='mb-[20px] text-lime-500 font-[500] text-[28px]'>Leave A Comment</h3>
 
                             <form action="">
@@ -164,7 +164,7 @@ const BlogDetails = () => {
                                     </div>
                                     <textarea name="" placeholder='Your Comments*' className='w-full h-[120px] border border-lime-900 rounded-[10px] p-[10px] ' ></textarea>
 
-                                    <button className='flex'><span className='bg-lime-900 flex items-center p-[10px] text-white gap-2 font-[400] rounded-[10px]'>Post Comment <span><FaPaperPlane /></span></span> </button>
+                                    <button className='button rounded-[10px]  sm:px-[34px] font-semibold px-5 flex flex-row items-center justify-center text-center cursor-pointer whitespace-nowrap  h-[48px] px-[34px] w-[200px] text-[14px] bg-lime-900 text-white'><span className='flex items-center gap-2'>Post Comment <span><FaPaperPlane /></span></span> </button>
                                 </div>
                             </form>
                         </div>

@@ -42,7 +42,10 @@ const Banner = () => {
                             <p className=" text-[34px] sm:text-[40px] md:text-[44px] font-light text-white ">Summer Collection</p>
                             <h1 className=" text-[46px] sm:text-[52px]  md:text-[60px] font-bold text-white ">FLAT 50% Off</h1>
                           </div>
-                          <button className="rounded-[24px] sm:min-w-[392px] sm:px-[34px] font-semibold px-5 flex flex-row items-center justify-center text-center cursor-pointer whitespace-nowrap  h-[48px] px-[34px] w-[200px] text-[14px] bg-black-900 text-white" data-aos="zoom-in" data-aos-duration="1500">Buy now</button>
+                          <button className="button rounded-[24px]  sm:px-[34px] font-semibold px-5 flex flex-row items-center justify-center text-center cursor-pointer whitespace-nowrap  h-[48px] px-[34px] w-[200px] text-[14px] bg-black-900 text-white" data-aos="zoom-in" data-aos-duration="1500">
+                            <p className=''>
+                            Buy now
+                              </p></button>
                         </div>
                       </div>
                     </div>

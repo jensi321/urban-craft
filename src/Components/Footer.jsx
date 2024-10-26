@@ -76,7 +76,7 @@ const Footer = () => {
                     <img src="assets/Images/email.svg" alt="" />
                   <input type="email" name="email" placeholder="Enter your mail" autoComplete="email" className='bg-transparent focus:outline-none'/>
                   </label>
-                  <Link className='rounded-[14px] min-w-[90px] px-4 font-medium flex flex-row items-center justify-center text-center cursor-pointer whitespace-nowrap  h-[30px] px-4 text-[12px] bg-lime-900 text-orange-50'>Subscribe</Link>
+                  <Link className='button rounded-[14px] min-w-[90px] px-4 font-medium flex flex-row items-center border border-lime justify-center text-center cursor-pointer whitespace-nowrap  h-[30px] px-4 text-[12px] bg-lime-900 text-orange-50'>Subscribe</Link>
                 </div>
               </div>
             </div>

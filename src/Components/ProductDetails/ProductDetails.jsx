@@ -118,7 +118,7 @@ const ProductDetails = () => {
                                     <button onClick={countplus}>  <img src="assets/Images/plus.svg" className='w-[20px] h-[20px]' alt="" /></button>
 
                                 </div>
-                                <Link to={"/cart"} className="rounded-[24px] min-w-[286px] px-[34px] font-semibold sm:px-5 flex flex-row items-center justify-center text-center cursor-pointer whitespace-nowrap  h-[48px] px-[34px] text-[14px] bg-lime-900 text-orange-50 hover:text-white">Add to cart</Link>
+                                <Link to={"/cart"} className="button rounded-[24px] min-w-[286px] px-[34px] font-semibold sm:px-5 flex flex-row items-center justify-center text-center cursor-pointer whitespace-nowrap  h-[48px] px-[34px] text-[14px] bg-lime-900 text-orange-50 ">Add to cart</Link>
                             </div>
                         </div>
                     </div>

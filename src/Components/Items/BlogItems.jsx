@@ -40,7 +40,7 @@ const BlogItems = ({ value }) => {
                         <Link><h4 className='text-[20px] mb-[15px] capitalize text-lime-900 font-[600]'>Temporibus autem quibusdam</h4></Link>
                         <p className='mb-[16px] leading-[1.8] text-gray-600'>There are many variations available the majority have suffered alteration randomised
                         words.</p>
-                        <Link to={'/blogdetails'} className='inline-block'><span className='bg-lime-900 text-white px-[20px] py-[10px] flex items-center gap-2 font-[500] rounded-[10px]'>Read More <span><FaArrowRightLong/></span></span></Link>
+                        <Link to={'/blogdetails'} className='inline-block'><span className='button bg-lime-900 text-white px-[20px] py-[10px] flex items-center gap-2 font-[500] rounded-[10px]'>Read More <span><FaArrowRightLong/></span></span></Link>
                     </div>  
                 </div>
             </div>

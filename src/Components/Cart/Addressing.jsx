@@ -90,7 +90,7 @@ const Addressing = () => {
                 <h4 className="mb-[20px] font-semibold text-[16px] ">Add New Address</h4>
               </div>
 
-              <Link className='bg-lime-900 px-[30px] py-[12px] rounded-[10px]' onClick={handleAddClick}><p className='text-white text-[16px] font-medium'>Add</p></Link>
+              <Link className='button bg-lime-900 px-[40px] py-[10px] rounded-[10px] text-white' onClick={handleAddClick}><p className=' text-[16px] font-medium'>Add</p></Link>
             </div>
           </div>
         </div>
