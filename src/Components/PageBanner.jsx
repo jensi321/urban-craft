@@ -1,7 +1,13 @@
 import { Breadcrumb } from 'antd'
-import React from 'react'
+import React, { useEffect } from 'react'
 
 const PageBanner = ({ value }) => {
+    useEffect(() => {
+        
+    
+        setTimeout(() => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }, 100);})
     return (
         <>
             <div className="py-[22px] flex justify-center bg-gray-200_03 sm:py-5 pagebanner-outer">

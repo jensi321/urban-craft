@@ -1,9 +1,14 @@
 import Aos from 'aos'
-import React from 'react'
+import React, { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 const Upcomingproduct = () => {
-    Aos.init()
+    useEffect(() => {
+        Aos.init({ once: true }); 
+    
+        setTimeout(() => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }, 100);})
     const items = [
         {id:""},
         {id:""},
@@ -23,15 +28,15 @@ const Upcomingproduct = () => {
                                         <div className="flex flex-1 flex-col sm:gap-8 gap-2">
                                             <div className="flex flex-col items-start gap-0.5">
                                                 <div className="flex flex-wrap justify-between sm:gap-5  self-stretch">
-                                                    <p className=" text-[14px] font-normal text-black-900 undefined">Goldstan kashmir wood table</p>
-                                                    <p className=" text-[14px] font-medium text-gray-900_02 undefined">Arriving 24 Jun, Mon</p>
+                                                    <p className=" text-[14px] font-normal text-black-900 ">Goldstan kashmir wood table</p>
+                                                    <p className=" text-[14px] font-medium text-gray-900_02 ">Arriving 24 Jun, Mon</p>
                                                 </div>
-                                                <p className=" text-[12px] font-normal text-gray-600_01 undefined">Color: Blue</p>
-                                                <p className=" text-[12px] font-normal text-gray-600_01 undefined">Qty: 1</p>
+                                                <p className=" text-[12px] font-normal text-gray-600_01 ">Color: Blue</p>
+                                                <p className=" text-[12px] font-normal text-gray-600_01 ">Qty: 1</p>
                                             </div>
                                         <div className="">
                                             <div className="flex">
-                                                <Link><p className=" text-[14px] font-medium text-lime-900 underline undefined">Track</p></Link>
+                                                <Link><p className=" text-[14px] font-medium text-lime-900 underline ">Track</p></Link>
                                             </div>
                                         </div>
                                         </div>

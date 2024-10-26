@@ -1,9 +1,15 @@
-import React from 'react'
+import Aos from 'aos';
+import React, { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom';
 
 const ProfileMenu = () => {
     const location = useLocation();
-
+    useEffect(() => {
+        Aos.init({ once: true }); 
+    
+        setTimeout(() => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }, 100);})
     return (
         <>
             <div className="rounded-[16px] lg:w-[24%] flex flex-col gap-5 border border-solid border-gray-200_01 px-4 py-5 w-full">

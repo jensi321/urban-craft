@@ -1,15 +1,22 @@
 import { Tabs } from 'antd'
-import React from 'react'
+import React, { useEffect } from 'react'
 import Upcomingproduct from './ProfileItems/Upcomingproduct'
 import ProfileMenu from './ProfileMenu'
+import Aos from 'aos'
 
 const MyOrder = () => {
+    useEffect(() => {
+        Aos.init({ once: true }); 
+    
+        setTimeout(() => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }, 100);})
     return (
         <>
            <div className="flex flex-col items-center mt-[40px] mb-[96px] gap-10" data-aos="fade-up" data-aos-duration="1000">
                 <div className="flex justify-center self-stretch">
                     <div className="mx-auto flex w-full max-w-6xl self-end xl:px-0 px-5">
-                        <p className=" sm:text-[38px] md:text-[44px] text-[48px] font-medium text-black-900 undefined">Settings</p>
+                        <p className=" sm:text-[38px] md:text-[44px] text-[48px] font-medium text-black-900 ">Settings</p>
                       </div>
                 </div>
                 <div className="mx-auto w-full max-w-6xl xl:px-0 px-5" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">

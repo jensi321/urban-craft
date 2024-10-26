@@ -2,6 +2,8 @@ body {
     font-family: "Rubik", sans-serif !important;
     line-height: normal;
     font-weight: 300;
+    overflow-x: hidden;
+    height: 100%;
 }
 
 input,
@@ -58,10 +60,20 @@ input[type="checkbox"]:checked::after {
     transform: rotate(45deg);
 }
 
-/* Login Start */
-.login-outer {
+/* Login BAckground  */
+.login-outer  .bg-img{
     background-image: url(../Images/signin.png);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-size: cover;
+    padding: 50px 0;
 }
+
+/* Ant Design Tab Start*/
+
 
 .ant-tabs-top>.ant-tabs-nav::before {
     display: none !important;
@@ -82,7 +94,10 @@ input[type="checkbox"]:checked::after {
     height: 1px !important;
 }
 
+/* Ant Design Tab End*/
 
+
+/* Page Banner Start */
 .pagebanner-outer .ant-breadcrumb ol {
     align-items: center;
 }
@@ -104,6 +119,8 @@ input[type="checkbox"]:checked::after {
     background-color: transparent;
     color: inherit;
 }
+
+/* Page Banner End */
 
 
 /* Banner Start */
@@ -172,7 +189,7 @@ input[type="checkbox"]:checked::after {
 
 /* Popular End */
 
-/* Product Dist Start */
+/* Pagenation Start */
 ul.pagination {
     display: flex;
     width: 100%;
@@ -180,18 +197,18 @@ ul.pagination {
     justify-content: center;
 }
 
-ul li {
+ul.pagination li {
     padding: 0 10px;
 }
 
-ul li a {
+ul.pagination li a {
     font-size: 15px;
     font-weight: 500;
     color: #0b0a0a;
 }
 
 
-ul li.selected a {
+ul.pagination li.selected a {
     background-color: #0b0a0a;
     color: #fff;
     width: 40px;
@@ -202,9 +219,9 @@ ul li.selected a {
     border-radius: 10px;
 }
 
-/* Product Dist End */
+/* Pagenation End */
 
-
+/* Loader Start */
 .loder-outer {
     position: fixed;
     top: 0;
@@ -227,7 +244,10 @@ ul li.selected a {
     height: 100%;
 }
 
-/* Media Screen */
+
+/* Loader End */
+
+/* Marquee Start */
 
 .marquee-outer {
     display: block;
@@ -292,6 +312,7 @@ ul li.selected a {
     margin: 5px;
 }
 
+
 @keyframes marqueeLeft {
     0% {
         left: 0;
@@ -303,9 +324,326 @@ ul li.selected a {
 }
 
 
+/*  Marquee Start */
+
+/* Price Progress Start */
+
+.ant-slider .ant-slider-rail,
+.ant-slider:hover .ant-slider-rail {
+    background-color: rgba(0, 0, 0, 0.27);
+}
+
+.ant-slider .ant-slider-track,
+.ant-slider:hover .ant-slider-track {
+    background-color: #774000;
+}
+
+.ant-slider .ant-slider-handle::after,
+.ant-slider:hover .ant-slider-handle::after {
+    box-shadow: 0 0 0 2px #774000;
+}
+
+.ant-slider .ant-slider-handle:hover::after,
+.ant-slider .ant-slider-handle:focus::after,
+.ant-slider .ant-slider-handle:active::after {
+    outline: 6px solid #77400033;
+    box-shadow: 0 0 0 2px #774000;
+
+}
+
+/* Price Progress End */
+
+/* About Start */
+.about-outer .slick-prev::before {
+    content: '\f104';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 800;
+    font-size: 18px;
+    color: #fff;
+    opacity: 1;
+}
+
+.about-outer .slick-next::before {
+    content: '\f105';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 800;
+    font-size: 18px;
+    color: #fff;
+    opacity: 1;
+}
+
+.about-outer .slick-prev {
+    left: -10%;
+}
+
+.about-outer .slick-next {
+    right: -10%;
+}
+
+.about-outer .slick-arrow,
+.about-outer .slick-next:focus,
+.about-outer .slick-next:hover,
+.about-outer .slick-prev:focus,
+.about-outer .slick-prev:hover {
+    z-index: 99;
+    background-color: #77400033;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+
+/* About End */
+
+
+/* Scroll Top Start */
+.progress-wrap {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    height: 46px;
+    width: 46px;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: inset 0 0 0 2px #7740004f;
+    z-index: 10000;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(15px);
+    transition: all 200ms linear;
+}
+
+.progress-wrap.active-progress {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.progress-circle path {
+    fill: none;
+    stroke: #774000;
+    stroke-width: 4;
+    transition: stroke-dashoffset 200ms linear;
+    /* Ensure smooth transition */
+}
+
+.icon {
+    position: absolute;
+    font-size: 20px;
+    color: #774000;
+    left: 0;
+    top: 0;
+    height: 46px;
+    width: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: uparrow 0.6s infinite alternate ease-in-out
+}
+
+
+@keyframes uparrow {
+    0% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(2px);
+
+    }
+}
+
+/* Scroll Top End */
+
+
+/* Image Hover */
+.img-content {
+    display: block;
+}
+
+.img-content::before {
+    position: absolute;
+    top: 0;
+    left: -75%;
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
+    transform: skewX(-25deg);
+}
+
+.img-content:hover::before {
+    animation: shine .75s;
+}
+
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+/* Image Hover End*/
+
+
+/* Team Socials */
+.team-socials::after {
+    content: "";
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    bottom: -138px;
+    right: 0;
+    background-size: 100%;
+    background-image: url('../Images/bottom-shape.png');
+    background-repeat: no-repeat;
+}
+
+.team-socials::before {
+    content: "";
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    background-size: 100%;
+    background-image: url("../Images/top-shape.png");
+    background-repeat: no-repeat;
+}
+
+/* Team Socials End */
+
+
+
+/* Home screen 2  */
+
+/* banner Start*/
+.banner-slider .slick-dots {
+    bottom: 20px;
+}
+
+.banner-slider .slick-dots li {
+    margin: 0;
+}
+
+.banner-slider .slick-dots li button::before {
+
+    width: 10px;
+    height: 10px;
+    content: '';
+    text-align: center;
+    background-color: #fff;
+    border: 2px solid #fff;
+    opacity: 1;
+    border-radius: 50%;
+}
+
+.banner-slider .slick-dots li.slick-active button::before {
+    background-color: transparent;
+}
+
+/* banner Start*/
+
+/* About Start */
+.about-banner::before {
+    content: '';
+    position: absolute;
+    display: block;
+    background-color: #fff;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 27.42%;
+    margin: 2.7%;
+}
+
+/* About End */
+
+
+/* Add this CSS to your styles */
+.loader {
+    display: flex;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+
+    
+}
+/* Add this CSS to your styles */
+
+/* Modal animation  Start*/
+
+
+.modal {
+    position: fixed;
+    z-index: 100;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-color: #00000066;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+.modal-enter-active {
+    animation: moveUp 0.7s ease-out forwards;
+}
+
+.modal-exit-active {
+    animation: moveDown 0.7s ease-out forwards;
+}
+
+@keyframes moveUp {
+    0% {
+        transform: translate(-50%, 100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+
+@keyframes moveDown {
+    0% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, 100%);
+        opacity: 0;
+    }
+}
+
+/* Modal animation  End*/
+
+/* First Banner Page Start */
+
+/* First Banner Page End*/
+
 
 @media (max-width :1024px) {
-    .banner-outer .slick-arrow {
+    .slick-arrow {
         display: none !important;
+    }
+
+}
+
+@media (max-width :640px) {
+    .about-banner::before {
+        display: none;
     }
 }

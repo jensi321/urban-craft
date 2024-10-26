@@ -254,15 +254,137 @@ export const ProductImages = [
 
 export const cartItems = [
     {
-        img:"assets/Images/cart1.png",
-        price:"129.00"
+        img: "assets/Images/cart1.png",
+        price: "129.00"
     },
     {
-        img:"assets/Images/cart2.png",
-        price:"129.00"
+        img: "assets/Images/cart2.png",
+        price: "129.00"
     },
     {
-        img:"assets/Images/cart3.png",
-        price:"129.00"
+        img: "assets/Images/cart3.png",
+        price: "129.00"
+    },
+]
+
+
+export const blogItems = [
+    {
+        img: "assets/Images/blog1.jpg"
+    },
+    {
+        img: "assets/Images/blog2.jpg"
+    },
+    {
+        img: "assets/Images/blog3.jpg"
+    },
+    {
+        img: "assets/Images/blog4.jpg"
+    },
+    {
+        img: "assets/Images/blog5.jpg"
+    },
+    {
+        img: "assets/Images/blog6.jpg"
+    },
+    {
+        img: "assets/Images/blog1.jpg"
+    },
+    {
+        img: "assets/Images/blog2.jpg"
+    },
+    {
+        img: "assets/Images/blog3.jpg"
+    },
+    {
+        img: "assets/Images/blog4.jpg"
+    },
+    {
+        img: "assets/Images/blog5.jpg"
+    },
+    {
+        img: "assets/Images/blog6.jpg"
+    },
+    {
+        img: "assets/Images/blog1.jpg"
+    },
+    {
+        img: "assets/Images/blog2.jpg"
+    },
+    {
+        img: "assets/Images/blog3.jpg"
+    },
+    {
+        img: "assets/Images/blog4.jpg"
+    },
+    {
+        img: "assets/Images/blog5.jpg"
+    },
+    {
+        img: "assets/Images/blog6.jpg"
+    },
+    {
+        img: "assets/Images/blog1.jpg"
+    },
+    {
+        img: "assets/Images/blog2.jpg"
+    },
+    {
+        img: "assets/Images/blog3.jpg"
+    },
+    {
+        img: "assets/Images/blog4.jpg"
+    },
+    {
+        img: "assets/Images/blog5.jpg"
+    },
+    {
+        img: "assets/Images/blog6.jpg"
+    },
+    {
+        img: "assets/Images/blog1.jpg"
+    },
+    {
+        img: "assets/Images/blog2.jpg"
+    },
+    {
+        img: "assets/Images/blog3.jpg"
+    },
+    {
+        img: "assets/Images/blog4.jpg"
+    },
+    {
+        img: "assets/Images/blog5.jpg"
+    },
+    {
+        img: "assets/Images/blog6.jpg"
+    },
+]
+
+
+export const teamItems = [
+    {
+        img:'assets/Images/team1.jpg'
+    },
+    {
+        img:'assets/Images/team2.jpg'
+    },
+    {
+        img:'assets/Images/team3.jpg'
+    },
+    {
+        img:'assets/Images/team4.jpg'
+    },
+]
+
+export const offerItems =[
+    {
+        img:'assets/Images/offer1.jpg'
+    },
+    {
+        img:'assets/Images/offer2.jpg'
+    },
+    {
+        img:'assets/Images/offer3.jpg'
     },
 ]

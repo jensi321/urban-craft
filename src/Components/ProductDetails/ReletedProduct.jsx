@@ -1,8 +1,13 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { RecentlyItemsData } from '../data'
 import RecentlyItems from '../Items/RecentlyItems'
 
 const ReletedProduct = () => {
+    useEffect(() =>{
+        setTimeout(() => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }, 100); 
+     })
     return (
         <>
             <div className=" md:my-[72px] flex flex-col sm:my-[24px] my-[12px]">

@@ -13,36 +13,36 @@ const LoginForm = () => {
                     <div className="w-full flex flex-col gap-3.5">
                         {
                             activeTab === '1' && <div className="inputgroup flex flex-col gap-1.5 email">
-                                <label htmlFor="" className='text-[14px] font-normal text-gray-600_01 px-4'>
+                                <span  className='text-[14px] font-normal text-gray-600_01 px-4'>
                                     Email*
-                                </label>
+                                </span>
                                 <div className="input-box w-full rounded-[24px] gap-2 flex items-center justify-center cursor-text bg-gray-200_03 text-gray-500 h-[48px] pl-4 pr-[34px] text-[14px]">
                                     <img src="assets/Images/email.svg" alt="" className='h-[24px] w-[24px]' />
-                                    <input type="email" name="" placeholder="Enter email" className='w-full bg-transparent focus:outline-none' />
+                                    <input type="email" name="email" autoComplete='email'  placeholder="Enter email" className='w-full bg-transparent focus:outline-none' />
                                 </div>
                             </div>
                         }
 
                         {
                             activeTab === '2' && <div className="inputgroup flex flex-col gap-1.5 phone">
-                                <label htmlFor="" className='text-[14px] font-normal text-gray-600_01 px-4'>
+                                <span  className='text-[14px] font-normal text-gray-600_01 px-4'>
                                     Phone Number*
-                                </label>
+                                </span>
                                 <div className="input-box w-full rounded-[24px] gap-2 flex items-center justify-center cursor-text bg-gray-200_03 text-gray-500 h-[48px] pl-4 pr-[34px] text-[14px]">
                                     <img src="assets/Images/call.svg" alt="" className='h-[24px] w-[24px]' />
-                                    <input type="tel" name="" placeholder="Enter phone number" className='w-full bg-transparent focus:outline-none' />
+                                    <input type="tel" name="number" autoComplete='number'  placeholder="Enter phone number" className='w-full bg-transparent focus:outline-none' />
                                 </div>
                             </div>
                         }
 
 
                         <div className="inputgroup flex flex-col gap-1.5">
-                            <label htmlFor="" className='text-[14px] font-normal text-gray-600_01 px-4'>
+                            <span  className='text-[14px] font-normal text-gray-600_01 px-4'>
                                 password*
-                            </label>
+                            </span>
                             <div className="input-box w-full rounded-[24px] gap-2 flex items-center justify-center cursor-text bg-gray-200_03 text-gray-500 h-[48px] pl-4 pr-[34px] text-[14px]">
                                 <img src="assets/Images/password.svg" alt="" className='h-[24px] w-[24px]' />
-                                <input type="password" name="" placeholder="Enter password" className='w-full bg-transparent focus:outline-none' />
+                                <input type="password" name="password" autoComplete='current-password' placeholder="Enter password" className='w-full bg-transparent focus:outline-none' />
                                 <img src="assets/Images/eye.svg" alt="" className='h-[24px] w-[24px]' />
                             </div>
                             <Link className='text-right  md:mr-4 mr-0'>
@@ -51,7 +51,7 @@ const LoginForm = () => {
                     </div>
 
                     {/* Signup Button */}
-                    <Link to={'/category'} className='rounded-[24px] px-[34px] w-full self-stretch font-semibold sm:px-5 flex flex-row items-center justify-center text-center cursor-pointer whitespace-nowrap h-[48px] px-[34px] text-[14px] bg-lime-900 '><p className='text-orange-50'>Login</p></Link>
+                    <Link to={'/'} className='rounded-[24px] px-[34px] w-full self-stretch font-semibold sm:px-5 flex flex-row items-center justify-center text-center cursor-pointer whitespace-nowrap h-[48px] px-[34px] text-[14px] bg-lime-900 '><p className='text-orange-50'>Login</p></Link>
 
                     {/* Or */}
                     <div className='flex items-center justify-center gap-8 '>
@@ -76,7 +76,7 @@ const LoginForm = () => {
 
                     {/* Register Link */}
                     <div className="flex flex-wrap">
-                        <p className=' text-[14px] font-normal text-gray-600_01 '>New to Furnihouse? </p>
+                        <p className=' text-[14px] font-normal text-gray-600_01 '>New to Furnihouse?&nbsp; </p>
                         <Link to={'/register'}><p className=' text-[14px] font-medium text-lime-900 underline'>Register</p></Link>
                     </div>
                 </form>

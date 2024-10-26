@@ -12,8 +12,9 @@ const Login = () => {
      })
     return (
         <>
-            <div className="md:py-[124px] md:h-[940px] flex w-full items-center justify-center bg-cover bg-no-repeat h-[100%] py-5 login-outer" >
-                <div className="mx-auto flex w-full max-w-6xl justify-center md:px-14 px-5 login-inner">
+            <div className="md:py-[124px] w-full  login-outer" >
+                <div className="bg-img"></div>
+                <div className="mx-auto flex w-full max-w-6xl justify-center md:px-14 my-12 px-5 login-inner relative z-10">
                     <div className="lg:w-[50%] sm:py-[38px] rounded-[24px] bg-white w-full py-5 item">
                         <div className="gap-[30px] mt-1 flex flex-col items-start px-10 sm:px-5 item-inner">
                             <p className=" text-[48px] font-medium text-black-900 font-rubik ">Login</p>

@@ -1,11 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import LikeThisProduct from './LikeThisProduct';
 import ProductPaginatition from './ProductPaginatition';
 
 
 const ProductList = () => {
 
-  
+    useEffect(() => {
+        
+    
+        setTimeout(() => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }, 100);})
     return (
         <>
             {/* Title Start */}
@@ -24,7 +29,7 @@ const ProductList = () => {
 
 
             {/* Content one Start */}
-            <ProductPaginatition itemsPerPage={12}/>
+            <ProductPaginatition/>
             {/* Content one End */}
 
             {/* Content Two Start */}
